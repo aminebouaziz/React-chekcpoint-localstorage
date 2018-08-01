@@ -1,0 +1,88 @@
+.title{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.spanStyle{
+    color:rgb(243, 154, 154);
+    font-weight: bold;
+}
+.divStyle{
+    font-size:60px;
+    text-align:center;
+}
+.buttonStyle{
+    margin-top:100px;
+    
+    margin-left: 250px;
+    border: none ;
+    background-color: rgb(233, 233, 233);
+}
+.titled{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.form{
+    margin:auto;
+    width:  720px;
+    width: 600px;;
+    border: 2px  grey ;
+    background-color: rgb(233, 233, 233);
+    border-radius: 30px;
+}
+
+.cardForm{
+    
+    height: 452px;
+    width: 846px;
+    margin-left: 530px;
+
+    border: 2px  grey ;
+    background-color: rgb(233, 233, 233);
+    border-radius: 30px;
+}
+.cardDetail{
+    height: 452px;
+    width: 846px;
+    margin-left: 530px;
+
+    border: 2px  grey ;
+    background-color: rgb(233, 233, 233);
+    border-radius: 30px;
+}
+.divstyle{float :left;
+display :bloc;
+width : 300px;
+min-height: 300px;
+margin-top:100px;
+margin-left:250px;
+font-size:30px ;
+border: 2px  grey ;
+background-color: white;
+border-radius: 30px;
+border-style: groove;
+}
+.name{
+    text-align: center;
+    text-decoration: none ;
+    
+}
+.name:hover{
+   
+    background-color: rgb(233, 233, 233);
+    text-decoration: none ;
+    color: black;
+
+}
+.link{
+    color: black;
+}
+
+.link:hover{
+    text-decoration: none ;
+    color: black;
+}

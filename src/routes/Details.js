@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
+import icon from "./icon.png"
+import trash from "./trash.png"
 class Details extends Component{
     constructor(){
         super()
@@ -33,17 +35,9 @@ class Details extends Component{
 
 
 render() {
-   const divStyle={
-    fontSize:'60px',
-    textAlign:'center'
-   }
-   const spanStyle={
-       color:'red'
-   }
-   const buttonStyle={
-        marginTop:'100px',
-        fontSize:'60px',
-   }
+   
+ 
+ 
     let bigArray = this.state.game.concat(this.state.ai).concat(this.state.web)
     console.log(bigArray)
     console.log(this.props.location.pathname)
@@ -56,14 +50,18 @@ render() {
     })
     return(
         <div>
-            <h1>details</h1>
-            <button> <Link to="/home">  HOME</Link></button>
-           <div style={divStyle}><span style={spanStyle}>Name :</span>  {detailsarr.name}</div>
-          <div style={divStyle}> <span style={spanStyle}n>Team :</span> {detailsarr.team}</div>
-          <div style={divStyle}>  <span style={spanStyle}>Description :</span> {detailsarr.desc}</div>
+            <h1 className="titled">>DETAILS</h1>
           
+           
+            <div className="cardDetail">
+           <div className="divStyle"><span className="spanStyle">Name :</span>  {detailsarr.name}</div>
+          <div className="divStyle"> <span className="spanStyle">Team :</span> {detailsarr.team}</div>
+          <div  className="divStyle">  <span className="spanStyle">Description :</span>    {detailsarr.desc  || "none"}</div>
+          <button onClick={()=>this.remove(detailsarr)}  className="buttonStyle"> <img src={trash}/></button>
+             <button className="homeButton" className="buttonStyle">   <Link to="/home">  <img src={icon}/></Link></button>
+          </div>
           
-              <center>  <button onClick={()=>this.remove(detailsarr)}  style={buttonStyle}> DELETE</button></center>
+            
         </div>
     )
 }
